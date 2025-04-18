@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+
+#build: FluidR3_GM.sf2.flac FluidR3_GS.sf2.flac
+
+#%.sf2.flac: %.sf2
+#	flac -8 --endian=little --channels=1 --bps=16 --sample-rate=44100 \
+#		--sign=signed -o $@ $<
 
 %:
 	dh $@
+
+execute_before_dh_prep:
+	7z x -mmt=on ./FluidR3_GM.sf2.7z.001

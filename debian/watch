@@ -1,0 +1,4 @@
+# It's currently not possible to use a watch file, because
+# the download URL provides a redirect to the latest available
+# version. Unfortunately, the directory itself is not browsable.
+# <http://www.musescore.org/download/fluid-soundfont.tar.gz>
